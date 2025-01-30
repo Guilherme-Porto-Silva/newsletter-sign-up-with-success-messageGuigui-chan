@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+*{
+    font-family: "Roboto-Regular";
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    color: hsl(235, 18%, 26%);
+}
+
+body, section.current{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+body{
+    background-color: hsl(231, 7%, 60%);
+    height: 100vh;
+    justify-content: flex-start;
+}
+
+section, #desktop{ display: none; }
+
+section, #mobile, #desktop{ width: 100%; }
+
+main{ padding: 10px; }
+
+ul{ list-style: url("./assets/images/icon-list.svg"); }
+
+li{
+    margin: 1rem 0;
+    text-align: left;
+}
+
+p, h1, h3 { overflow-wrap: break-word; }
+
+h1, h3{ color: hsl(234, 29%, 20%); }
+
+p{ width: 80%; }
+
+form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    b{ color: tomato; }
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    margin: 15px 0;
+    padding: 0.5rem;
+}
+
+input.error{
+    outline: 2px solid darkred;
+    background-color: rgb(201, 122, 109);
+    color: tomato;
+}
+  
+button, input{ border-radius: 1mm; }
+  
+button{
+    background-color: hsl(248, 70%, 10%);
+    color: hsl(0, 0%, 100%);
+    padding: 2%;
+}
+
+button:hover{
+    background-color: gold;
+    color: hsl(0, 70%, 10%);
+    border: 3px solid black;
+    outline: 3px solid aliceblue;
+}
+  
+button, a, form > *{
+    cursor: pointer;
+    font-size: 125%;
+}
+
+a{ background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(228, 45%, 44%)); }
+
+a:hover{ background: linear-gradient(to right, gold, hsl(0, 0%, 100%)); }
+
+a, a:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+button:hover, a:hover{ transition: all 0.2s ease-in-out; }
+
+@media screen and (min-width: 1000px) {
+
+    *{ font-size: larger; }
+
+    h1{ font-size: 2em; }
+
+    li, legend{ font-size: 0.8em; }
+
+    body{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section, img{ border-radius: 1cm;}
+
+    section.current{
+        padding: 10px;
+        width: 80%;
+        height: 60%;
+    }
+
+    main{ margin: 5%; }
+
+    #formSection{ flex-direction: row-reverse; }
+    
+    #mobile, #desktop{
+        width: 40%;
+        height: 95%;
+    }
+
+    #mobile{ display: none; }
+
+    #desktop{ display: inline; }
+}
