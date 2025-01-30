@@ -100,7 +100,6 @@ button:hover, a:hover{ transition: all 0.2s ease-in-out; }
 
 @media screen and (min-width: 1000px) {
 
-    *{ font-size: larger; }
 
     h1{ font-size: 2em; }
 
