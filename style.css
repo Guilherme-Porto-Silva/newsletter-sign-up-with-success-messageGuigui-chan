@@ -13,6 +13,8 @@
     color: hsl(235, 18%, 26%);
 }
 
+.atribution{ color: #ffffff; }
+
 body, section.current{
     background-color: hsl(0, 0%, 100%);
     display: flex;
@@ -22,7 +24,7 @@ body, section.current{
 }
 
 body{
-    background-color: hsl(231, 7%, 60%);
+    background-color: hsl(248, 70%, 10%);
     height: 100vh;
     justify-content: flex-start;
 }
