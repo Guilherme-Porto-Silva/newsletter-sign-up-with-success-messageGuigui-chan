@@ -100,11 +100,6 @@ button:hover, a:hover{ transition: all 0.2s ease-in-out; }
 
 @media screen and (min-width: 1000px) {
 
-
-    h1{ font-size: 2em; }
-
-    li, legend{ font-size: 0.8em; }
-
     body{
         flex-direction: column;
         justify-content: center;
