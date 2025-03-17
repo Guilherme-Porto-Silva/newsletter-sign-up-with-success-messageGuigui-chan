@@ -13,7 +13,7 @@
     color: hsl(235, 18%, 26%);
 }
 
-.atribution{ color: #ffffff; }
+aside{ color: #ffffff; }
 
 body, section.current{
     background-color: hsl(0, 0%, 100%);
